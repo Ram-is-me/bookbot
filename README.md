@@ -1,2 +1,3 @@
 # bookbot
-This is a tutorial project for python
+
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
