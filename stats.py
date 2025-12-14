@@ -13,3 +13,20 @@ def get_character_breakup_count(text):
         else:
             final_dict[t] = 1
     return final_dict
+
+def character_breakup_dict_prepare_for_print(char_dict):
+    final_list = []
+    
+    for key, value in char_dict.items():
+        if key.isalpha() == False:
+            continue
+        final_dict = {}
+        final_dict["char"] = key
+        final_dict["num"] = value
+        final_list.append(final_dict)
+
+    def sort_on(items):
+        return items["num"]
+
+    final_list.sort(key=sort_on, reverse=True)
+    return final_list
